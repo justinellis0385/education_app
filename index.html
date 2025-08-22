@@ -10,9 +10,27 @@
   <body>
     <main>
       <div class="games">
-        <h1>Click below to play!</h1>
-        <a href="views/letters.html"><img src="images/A.jpg"></a>
+        <h1 class="hidden">Click below to play!</h1>
+        <a href="views/letters.html"><img id="main" src="images/A.jpg"></a>
       </div>
+
+      <div id="quiz" class="hidden">
+        <img id="quizPic1" src="">
+        <img id="quizPic2" src="">
+      </div>
+
+      <video controls="controls" class="hidden"></video>
+      
     </main>
+    
+    <audio controls="controls" class="hidden" name="goodJob"></audio>
+    <audio controls="controls" class="hidden" name="gameOver"></audio>
+    <audio controls="controls" class="hidden" name="cheer"></audio>
+    <audio controls="controls" class="hidden" name="wrongAnswer"></audio>
+    <audio controls="controls" class="hidden" name="rightAnswer"></audio>
+    <audio controls="controls" class="hidden" name="clickLetter"></audio>
+    <audio controls="controls" class="hidden" name="imageChoice"></audio>
+    
+    <script src="letters.js"></script>
   </body>
 </html>
