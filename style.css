@@ -1,0 +1,213 @@
+/* general sytling for the learning games */
+
+* {
+  font-family: 'Gamja Flower', cursive;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 9rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  color: #ff82df;
+}
+
+iframe {
+  display: none;
+}
+
+img {
+  box-shadow: -1px -1px 10px 0px rgba(255,130,223,0.75);
+  border-radius: 2rem;
+}
+
+img:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: -1px -1px 28px 0px rgba(255,130,223,0.75);
+  transform: scale(1.025);
+}
+
+video {
+  display: none;
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  margin-left: -49%;
+}
+
+/* styling for home button */
+nav {
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  background: #ff82df;
+  color: white;
+}
+
+.levels a {
+  text-decoration: none;
+  margin-left: 3rem;
+}
+
+.levels a:nth-of-type(1) {
+  margin-left: 7rem;
+}
+
+.levels a:link, .levels a:visited {
+  color: white;
+}
+
+.levels a:hover, .levels a:focus {
+  border-bottom: 2px solid white;
+}
+
+.home-button {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.home-button img {
+  width: 40px;
+  box-shadow: none;
+}
+
+/* styling for the home page and game selection */
+
+.games {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -45%;
+  margin-top: -22%;
+  text-align: center;
+}
+
+.games a {
+  display: inline-block;
+  margin: 20px;
+}
+
+.games img {
+  width: 45em;
+}
+
+/* styling for the letter game */
+
+.game {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+}
+
+.game h1 {
+  font-size: 8rem;
+  margin: 1rem 0;
+}
+
+#options, #quiz {
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  margin-left: -49%;
+}
+
+#options {
+  display: flex;
+}
+
+#quiz {
+  display: none;
+}
+
+#options img, #quiz img {
+  flex: 1;
+  margin: 2rem;
+  width: 45%;
+}
+
+#options .imageType {
+  display: none;
+}
+
+#main {
+  display: block;
+  margin: 0 auto;
+  height: 80%;
+  max-width: 90%;
+}
+
+/* styling for the word games */
+
+.words {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-auto-rows: 12.5rem;
+}
+
+#words-h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.words p {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.words p:hover {
+  transform: scale(2);
+}
+
+.words span {
+  flex: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.word-assessment {
+  text-align: center;
+}
+
+.word-assessment p {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.exampleWord {
+  font-size: 10rem;
+  margin: 0;
+}
+
+.exampleWord p:hover {
+  transform: scale(1.5);
+}
+
+.assessment {
+  font-size: 6rem;
+}
