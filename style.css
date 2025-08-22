@@ -24,7 +24,7 @@ body {
 }
 
 /* New: Hide all game elements by default */
-.game, .games, #options, #quiz, video, iframe, nav {
+.game, .games, #options, #quiz, video, audio {
     display: none !important;
 }
 
@@ -64,6 +64,21 @@ img {
     border-radius: 8px;
     border: 3px solid #e0e6ed;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Quiz styling to display images */
+#quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 90%;
+}
+
+#quiz img {
+    width: 45em;
+    height: auto;
+    margin: 20px;
 }
 
 /*
