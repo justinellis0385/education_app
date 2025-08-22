@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <title>Letter Game</title>
+  </head>
+  <body>
+    <main>
+      <a class="home-button" href="../index.html"><img src="../images/home.png" alt="home"></a>
+
+      <div id="options">
+        <img class="order" src="../images/A.jpg" name="forward"></img>
+        <img class="order" src="../images/Z.jpg" name="reverse"></img>
+        <img class="imageType" src="../images/A.jpg" name="">
+        <img class="imageType" src="../images/miniA.jpg" name="mini">
+      </div>
+
+      <div class="game">
+        <h1>Letter Game</h1>
+        <img id="main" src="" name="">
+      </div>
+
+      <div id="quiz">
+        <img class="quizPic" id="quizPic1">
+        <img class="quizPic" id="quizPic2">
+      </div>
+
+      <audio src="../audio/image-choice.m4a" name="imageChoice"></audio>
+      <audio src="../audio/click-letter.m4a" name="clickLetter"></audio>
+      <audio src="../audio/good-job.m4a" name="goodJob"></audio>
+      <audio src="../audio/right-answer.m4a" name="rightAnswer"></audio>
+      <audio src="../audio/wrong-answer.m4a" name="wrongAnswer"></audio>
+      <audio src="../audio/game-over.m4a" name="gameOver"></audio>
+      <audio src="../audio/cheer.mp3" name="cheer"></audio>
+
+      <video></video>
+
+      <iframe src="../audio/letter-welcome.m4a" allow="autoplay"></iframe>
+    </main>
+
+    <script src="../scripts/letters.js"></script>
+  </body>
+</html>
