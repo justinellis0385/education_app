@@ -1,12 +1,13 @@
 let main = document.querySelector('main');
-let iframe = document.querySelector('iframe');
-let options = document.getElementById('options');
-let game = document.querySelector('.game');
+let iframe = document.querySelector('iframe'); // This might be from another page
+let options = document.getElementById('options'); // This might be from another page
+let game = document.querySelector('.games'); // Select the main games div
 let mainImg = document.getElementById('main');
 let quiz = document.getElementById('quiz');
 let quizPic1 = document.getElementById('quizPic1');
 let quizPic2 = document.getElementById('quizPic2');
 let clickCount = 0, index = 0;
+let video = document.querySelector('video');
 
 let gameOrder, imageType;
 
@@ -87,10 +88,10 @@ function endGame() {
 }
 
 function playVideo() {
-    let video = document.querySelector('video');
     video.src = `../video/${gameArray[index-1]}.mp4`;
     setMainImage();
     toggleElementVisibility(game, false);
+    toggleElementVisibility(quiz, false);
     toggleElementVisibility(video, true);
     video.play();
     video.addEventListener('ended', function() {
@@ -137,7 +138,9 @@ function setQuizImageSource(pic1Source, pic2Source) {
 function updateQuizImages() {
     let currentCharacter = gameArray[index - 1];
     let randomCharacter = getRandomCharacter();
-    if (randomCharacter === currentCharacter) randomCharacter = getRandomCharacter();
+    if (randomCharacter === currentCharacter) {
+      randomCharacter = getRandomCharacter();
+    }
     index % 2 === 0 ? setQuizImageSource(currentCharacter, randomCharacter) : setQuizImageSource(randomCharacter, currentCharacter);
 }
 
